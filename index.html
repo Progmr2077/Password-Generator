@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Password Generator</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <main>
+      <div class="card">
+        <div class="output">
+          <div id="passwordDisplay" class="password-text">Click Generate</div>
+          <button id="copyBtn" class="copy">Copy</button>
+        </div>
+
+        <label>
+          Length:
+          <input type="range" id="length" min="6" max="32" value="12" />
+          <span id="lengthValue">12</span>
+        </label>
+
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Lowercase</label
+        >
+        <label
+          ><input type="checkbox" id="uppercase" checked /> Uppercase</label
+        >
+        <label><input type="checkbox" id="numbers" checked /> Numbers</label>
+        <label><input type="checkbox" id="symbols" checked /> Symbols</label>
+
+        <div class="strength">
+          Strength:
+          <span id="strengthStatus">Weak</span>
+        </div>
+
+        <button id="generateBtn">Generate Password</button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
